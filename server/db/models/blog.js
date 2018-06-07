@@ -13,8 +13,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    // createdat: DataTypes.DATE,
-    // updatedAt: DataTypes.DATE
+    createdAt: DataTypes.DATE,
+    updatedAt: DataTypes.DATE
   }, {});
   Blog.associate = function(models) {
     // associations can be defined here

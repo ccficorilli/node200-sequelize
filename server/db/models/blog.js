@@ -13,12 +13,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: true
     },
-    createdat: DataTypes.DATE,
-    updatedAt: DataTypes.DATE
+    // createdat: DataTypes.DATE,
+    // updatedAt: DataTypes.DATE
   }, {});
   Blog.associate = function(models) {
     // associations can be defined here
     models.Blog.belongsTo(models.Author, {foreignKey: 'authorId'});  
   };
   return Blog;
-};
+}

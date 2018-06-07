@@ -1,3 +1,4 @@
+
 'use strict';
 // const Blog = require('./blog')
 module.exports = (sequelize, DataTypes) => {
